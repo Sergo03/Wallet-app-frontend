@@ -1,0 +1,207 @@
+.transactionHistory {
+  font-family: 'Circe', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ max-width: 688px;
+  justify-content: space-evenly; 
+}
+
+.blockTable{
+    display: block;
+    height: 500px;
+    /* width: 768px; */
+    margin: 0 auto;
+}
+
+.thead {
+  display: flex;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+}
+.tbody{
+  overflow-y: scroll;
+  max-height: 450px;;
+}
+
+.th,
+.td {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.td {
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+
+.item {
+  height: 45px;
+}
+.tr:not(:first-child) {
+  border-top: 1px solid #dcdcdf;
+  
+}
+
+.transactionHistory {
+  margin-top: 40px;
+  margin-left:0;
+  margin-right:0;
+  table-layout: fixed;
+  width: 100%;
+}
+.titleBlock {
+  display: flex;
+  border-radius: 30px;
+  background-color: #ffffff;
+  align-items: center;
+  height: 58px;
+}
+
+
+.titleItem {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.income {
+  color: #24cca7;
+}
+.outcome {
+  color: #ff6596;
+}
+
+.incomeItem {
+  color: #24cca7;
+
+  height: 40px;
+  font-weight: 300;
+}
+
+.outcomeItem {
+  color: #ff6596;
+
+  height: 40px;
+  font-weight: 300;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 320px) {
+  .transactionHistory {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .tbody{
+    overflow-y: scroll;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+
+  }
+  .blockTable{
+   
+   
+   width: 100%;
+
+}
+}
+
+@media screen and (max-width: 767px) {
+  .transactionHistory {
+    min-width: 280px;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tbody{
+    overflow-y: scroll;
+    max-height: 320px;;
+  }
+  .titleBlock {
+    display: none;
+  }
+  .item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 40px; 
+  }
+  
+  .blockTable{
+   
+      height: 320px;
+      max-width: 320px;
+  
+  }
+
+  .table,
+  .tr,
+  .tbody,
+  .item,
+  .income,
+  .outcome,
+  .incomeItem,
+  .outcomeItem {
+    display: block;
+    width: 100%;
+  }
+
+  .tr {
+    border-left: 5px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin: 15px auto;
+    border-top: none;
+    background-color: #ffffff;
+  }
+
+  .td {
+    text-align: right;
+    position: relative;
+  }
+
+  .td:not(:last-child) {
+    border-bottom: 1px solid #dcdcdf;
+  }
+  .td::before {
+    content: attr(datelabel);
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: black;
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .transactionHistory {
+    margin-left: 30px;
+    max-width: 700px;
+  }
+  .blockTable{
+   
+    height: 500px;
+    width: 800px;
+
+}
+.tbody{
+  overflow-y: scroll;
+  max-height: 500px;;
+}
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins/Poppins-Regular.woff2") format("woff2"),
+  url("../../fonts/Poppins/Poppins-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+  @media (max-width: 767px){
+    .nameApp{
+      display: none;
+    }
+  }
+@media (min-width: 768px){
+  .viewContainer{
+    background: #E5E5E5;
+  }
+  .nameApp{
+    position: absolute;
+    line-height: 45px;
+    color: #000000;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px){
+  .viewContainer{
+    background-image: url(../../image/Frame.png), url(../../image/Ellipse_purpure_tablet.png), url(../../image/Ellipse_roze.png);
+    background-position: top 60px left 114px, top 585px left, top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    padding: 360px 114px 48px 114px;
+  }
+  .nameApp{
+    top:167px;
+    right: 166px;
+  }
+}
+@media (min-width: 1280px){
+  .viewContainer{
+    height: 100vh;
+    background-image: url(../../image/register_desktop.png), url(../../image/Ellipse_imac.png), url(../../image/Ellipse_rose_imac.png);
+    background-position: top 153px left 66px, top 271px left, top right;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:row-reverse;
+  }
+  .nameApp{
+    top: 597.5px;
+    left: 200px;
+  }
+}
